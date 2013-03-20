@@ -112,6 +112,7 @@
 				};
 				//create a timer to control slide rotation interval
 				var rotateTimer = function(){
+					clearTimeout(obj.play);
 					obj.play = setTimeout(function(){
 						//trigger slide rotate function at end of timer
 						rotate();
